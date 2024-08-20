@@ -1,0 +1,9 @@
+.header {
+  margin-bottom: 23px;
+}
+@media (max-width: 575px) {
+  .header {
+    margin-bottom: 33px;
+  }
+}
+/*# sourceMappingURL=main-catalog.css.map */

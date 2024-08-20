@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SitDownPls</title>
+  <link rel="preload" href="fonts/OpenSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSansSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSansBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PlayfairDisplayBlack.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-catalog.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="header__container">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__top-left">
+          <a href="#" class="header__link header__link--three"><img loading="lazy" src="img/logo.svg"
+              class="header__logo" width="187" height="27" alt="Логотип"></a>
+          <div class="header__top-select">
+            <label class="header__label" for="header-top-select">Ваш регион:</label>
+            <select name="Регион" class="header__top-choices" id="header-top-select">
+              <option value="Москва">Москва</option>
+              <option value="Казань">Казань</option>
+              <option value="Уфа">Уфа</option>
+              <option value="Пермь">Пермь</option>
+            </select>
+          </div>
+          <a href="tel:+74958854547" class="header__phone">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#call"></use>
+            </svg>
+            <span class="header__number">+7 (495) 885-45-47</span>
+          </a>
+        </div>
+        <div class="header__top-right">
+          <ul class="list-reset header__submeny">
+            <li class="header__sub-item"><a href="#" class="header__sub-link">О компании<span></span></a></li>
+            <li class="header__sub-item"><a href="#" class="header__sub-link">Гарантия и возврат<span></span></a></li>
+            <li class="header__sub-item"><a href="#" class="header__sub-link">Корпоративным клиентам<span></span></a>
+            </li>
+            <li class="header__sub-item"><a href="#" class="header__sub-link">Дизайн-решение<span></span></a></li>
+          </ul>
+          <div class="header__small-menu">
+            <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+              <span class="burger__line"></span>
+            </button>
+            <a href="#" class="header__link header__link--two"><img loading="lazy" src="img/logo.svg"
+                class="header__logo" width="187" height="27" alt="Логотип"></a>
+            <div class="header__lk header__lk--top">
+              <button class="btn-reset header__user">
+                <svg>
+                  <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+              </button>
+              <button class="btn-reset header__shopping-cart">
+                <svg width="41" height="28" viewBox="0 0 41 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_664_1458)">
+                    <path class="path-2"
+                      d="M39.8162 19.8503H19.902L20.9019 17.7365L37.5154 17.7052C38.0772 17.7052 38.5588 17.2887 38.6591 16.7125L40.9599 3.34598C41.0201 2.99541 40.9298 2.63444 40.7091 2.36023C40.6 2.22528 40.4639 2.11658 40.3103 2.04166C40.1567 1.96674 39.9892 1.9274 39.8195 1.92637L18.6848 1.85348L18.5042 0.971861C18.3905 0.40957 17.9022 0 17.3471 0H12.1805C11.8674 0 11.5671 0.129087 11.3458 0.358864C11.1244 0.588641 11 0.900285 11 1.22524C11 1.55019 11.1244 1.86184 11.3458 2.09161C11.5671 2.32139 11.8674 2.45048 12.1805 2.45048H16.3907L17.1799 6.34486L19.1228 16.1086L16.6214 20.3466C16.4915 20.5286 16.4133 20.7446 16.3956 20.9704C16.3778 21.1961 16.4213 21.4225 16.5211 21.6239C16.7218 22.0369 17.1264 22.2973 17.5745 22.2973H19.6746C19.2269 22.9145 18.9851 23.6662 18.9857 24.4388C18.9857 26.4034 20.524 28 22.4168 28C24.3096 28 25.8478 26.4034 25.8478 24.4388C25.8478 23.6648 25.6004 22.9116 25.159 22.2973H30.5463C30.0986 22.9145 29.8568 23.6662 29.8574 24.4388C29.8574 26.4034 31.3957 28 33.2885 28C35.1812 28 36.7195 26.4034 36.7195 24.4388C36.7195 23.6648 36.4721 22.9116 36.0307 22.2973H39.8195C40.4683 22.2973 41 21.7489 41 21.072C40.9981 20.7474 40.8725 20.4368 40.6507 20.2079C40.4289 19.979 40.1289 19.8504 39.8162 19.8503ZM19.1763 4.26925L38.4317 4.33519L36.5456 15.2964L21.4202 15.3242L19.1763 4.26925ZM22.4168 25.5356C21.8349 25.5356 21.36 25.0428 21.36 24.4388C21.36 23.8349 21.8349 23.342 22.4168 23.342C22.9987 23.342 23.4735 23.8349 23.4735 24.4388C23.4735 24.7297 23.3622 25.0087 23.164 25.2144C22.9658 25.4201 22.6971 25.5356 22.4168 25.5356ZM33.2885 25.5356C32.7066 25.5356 32.2317 25.0428 32.2317 24.4388C32.2317 23.8349 32.7066 23.342 33.2885 23.342C33.8704 23.342 34.3452 23.8349 34.3452 24.4388C34.3452 24.7297 34.2339 25.0087 34.0357 25.2144C33.8375 25.4201 33.5687 25.5356 33.2885 25.5356Z"
+                      fill="#A65CF0" />
+                    <ellipse cx="7" cy="12.5" rx="7" ry="7.5" fill="#FF862F" />
+                    <path
+                      d="M9.49023 12.4307C9.49023 13.0068 9.44466 13.5212 9.35352 13.9736C9.26562 14.4261 9.1224 14.8102 8.92383 15.126C8.72852 15.4417 8.47135 15.6826 8.15234 15.8486C7.83333 16.0146 7.44596 16.0977 6.99023 16.0977C6.41732 16.0977 5.94694 15.9528 5.5791 15.6631C5.21126 15.3701 4.93945 14.9502 4.76367 14.4033C4.58789 13.8532 4.5 13.1956 4.5 12.4307C4.5 11.6592 4.57975 11 4.73926 10.4531C4.90202 9.90299 5.16569 9.48145 5.53027 9.18848C5.89486 8.89551 6.38151 8.74902 6.99023 8.74902C7.5599 8.74902 8.02865 8.89551 8.39648 9.18848C8.76758 9.47819 9.04264 9.89811 9.22168 10.4482C9.40072 10.9951 9.49023 11.6559 9.49023 12.4307ZM5.99902 12.4307C5.99902 12.9743 6.02832 13.4284 6.08691 13.793C6.14876 14.1543 6.2513 14.4261 6.39453 14.6084C6.53776 14.7907 6.73633 14.8818 6.99023 14.8818C7.24089 14.8818 7.43783 14.7923 7.58105 14.6133C7.72754 14.431 7.83171 14.1592 7.89355 13.7979C7.9554 13.4333 7.98633 12.9775 7.98633 12.4307C7.98633 11.887 7.9554 11.4329 7.89355 11.0684C7.83171 10.7038 7.72754 10.4303 7.58105 10.248C7.43783 10.0625 7.24089 9.96973 6.99023 9.96973C6.73633 9.96973 6.53776 10.0625 6.39453 10.248C6.2513 10.4303 6.14876 10.7038 6.08691 11.0684C6.02832 11.4329 5.99902 11.887 5.99902 12.4307Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_664_1458">
+                      <rect width="41" height="28" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header__middle">
+      <a href="index.html" class="header__link"><img loading="lazy" src="img/logo.svg" class="header__logo" width="187"
+          height="27" alt="Логотип"></a>
+      <nav class="nav" title="Меню" data-menu>
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог<span></span></a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Магазины<span></span></a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Шоу-рум<span></span></a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Доставка и оплата<span></span></a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Дисконт<span></span></a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты<span></span></a></li>
+        </ul>
+        <ul class="list-reset header__submeny header__submeny--two">
+          <li class="header__sub-item"><a href="#" class="header__sub-link">О компании<span></span></a></li>
+          <li class="header__sub-item"><a href="#" class="header__sub-link">Гарантия и возврат<span></span></a></li>
+          <li class="header__sub-item"><a href="#" class="header__sub-link">Корпоративным клиентам<span></span></a>
+          </li>
+          <li class="header__sub-item"><a href="#" class="header__sub-link">Дизайн-решение<span></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header__bottom">
+      <div class="header__search">
+        <div class="search-wrapper">
+          <input class="search" type="search" placeholder="Я хочу купить...">
+          <svg class="" width="20" height="20">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+          <button class="btn-reset search__btn">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_52773_756)">
+                <circle cx="16" cy="16" r="15" stroke="#A65CF0" stroke-width="2" fill="transparent" />
+                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_52773_756">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <div class="header__select">
+          <select name="Категории" class="header__bottom-choices" id="header-select">
+            <option value="">Категория</option>
+            <option value="Диваны">Диваны</option>
+            <option value="Кресла">Кресла</option>
+            <option value="Пуфы">Пуфы</option>
+            <option value="Кровати">Кровати</option>
+            <option value="Тумбы">Тумбы</option>
+            <option value="Комоды">Комоды</option>
+            <option value="Стулья">Стулья</option>
+            <option value="Столы">Столы</option>
+            <option value="Аксессуары">Аксессуары</option>
+          </select>
+        </div>
+      </div>
+      <div class="header__lk header__lk--bottom">
+        <button class="btn-reset header__user">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </button>
+        <button class="btn-reset header__shopping-cart">
+          <svg width="41" height="28" viewBox="0 0 41 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_664_1458)">
+              <path class="path-2"
+                d="M39.8162 19.8503H19.902L20.9019 17.7365L37.5154 17.7052C38.0772 17.7052 38.5588 17.2887 38.6591 16.7125L40.9599 3.34598C41.0201 2.99541 40.9298 2.63444 40.7091 2.36023C40.6 2.22528 40.4639 2.11658 40.3103 2.04166C40.1567 1.96674 39.9892 1.9274 39.8195 1.92637L18.6848 1.85348L18.5042 0.971861C18.3905 0.40957 17.9022 0 17.3471 0H12.1805C11.8674 0 11.5671 0.129087 11.3458 0.358864C11.1244 0.588641 11 0.900285 11 1.22524C11 1.55019 11.1244 1.86184 11.3458 2.09161C11.5671 2.32139 11.8674 2.45048 12.1805 2.45048H16.3907L17.1799 6.34486L19.1228 16.1086L16.6214 20.3466C16.4915 20.5286 16.4133 20.7446 16.3956 20.9704C16.3778 21.1961 16.4213 21.4225 16.5211 21.6239C16.7218 22.0369 17.1264 22.2973 17.5745 22.2973H19.6746C19.2269 22.9145 18.9851 23.6662 18.9857 24.4388C18.9857 26.4034 20.524 28 22.4168 28C24.3096 28 25.8478 26.4034 25.8478 24.4388C25.8478 23.6648 25.6004 22.9116 25.159 22.2973H30.5463C30.0986 22.9145 29.8568 23.6662 29.8574 24.4388C29.8574 26.4034 31.3957 28 33.2885 28C35.1812 28 36.7195 26.4034 36.7195 24.4388C36.7195 23.6648 36.4721 22.9116 36.0307 22.2973H39.8195C40.4683 22.2973 41 21.7489 41 21.072C40.9981 20.7474 40.8725 20.4368 40.6507 20.2079C40.4289 19.979 40.1289 19.8504 39.8162 19.8503ZM19.1763 4.26925L38.4317 4.33519L36.5456 15.2964L21.4202 15.3242L19.1763 4.26925ZM22.4168 25.5356C21.8349 25.5356 21.36 25.0428 21.36 24.4388C21.36 23.8349 21.8349 23.342 22.4168 23.342C22.9987 23.342 23.4735 23.8349 23.4735 24.4388C23.4735 24.7297 23.3622 25.0087 23.164 25.2144C22.9658 25.4201 22.6971 25.5356 22.4168 25.5356ZM33.2885 25.5356C32.7066 25.5356 32.2317 25.0428 32.2317 24.4388C32.2317 23.8349 32.7066 23.342 33.2885 23.342C33.8704 23.342 34.3452 23.8349 34.3452 24.4388C34.3452 24.7297 34.2339 25.0087 34.0357 25.2144C33.8375 25.4201 33.5687 25.5356 33.2885 25.5356Z"
+                fill="#A65CF0" />
+              <ellipse cx="7" cy="12.5" rx="7" ry="7.5" fill="#FF862F" />
+              <path
+                d="M9.49023 12.4307C9.49023 13.0068 9.44466 13.5212 9.35352 13.9736C9.26562 14.4261 9.1224 14.8102 8.92383 15.126C8.72852 15.4417 8.47135 15.6826 8.15234 15.8486C7.83333 16.0146 7.44596 16.0977 6.99023 16.0977C6.41732 16.0977 5.94694 15.9528 5.5791 15.6631C5.21126 15.3701 4.93945 14.9502 4.76367 14.4033C4.58789 13.8532 4.5 13.1956 4.5 12.4307C4.5 11.6592 4.57975 11 4.73926 10.4531C4.90202 9.90299 5.16569 9.48145 5.53027 9.18848C5.89486 8.89551 6.38151 8.74902 6.99023 8.74902C7.5599 8.74902 8.02865 8.89551 8.39648 9.18848C8.76758 9.47819 9.04264 9.89811 9.22168 10.4482C9.40072 10.9951 9.49023 11.6559 9.49023 12.4307ZM5.99902 12.4307C5.99902 12.9743 6.02832 13.4284 6.08691 13.793C6.14876 14.1543 6.2513 14.4261 6.39453 14.6084C6.53776 14.7907 6.73633 14.8818 6.99023 14.8818C7.24089 14.8818 7.43783 14.7923 7.58105 14.6133C7.72754 14.431 7.83171 14.1592 7.89355 13.7979C7.9554 13.4333 7.98633 12.9775 7.98633 12.4307C7.98633 11.887 7.9554 11.4329 7.89355 11.0684C7.83171 10.7038 7.72754 10.4303 7.58105 10.248C7.43783 10.0625 7.24089 9.96973 6.99023 9.96973C6.73633 9.96973 6.53776 10.0625 6.39453 10.248C6.2513 10.4303 6.14876 10.7038 6.08691 11.0684C6.02832 11.4329 5.99902 11.887 5.99902 12.4307Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_664_1458">
+                <rect width="41" height="28" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="breadcrumps">
+  <div class="container">
+    <ul class="list-reset breadcrumps__list">
+      <li class="breadcrumps__item"><a class="breadcrumps__link" href="index.html">Главная</a></li>
+      <li class="breadcrumps__item"><a class="breadcrumps__link breadcrumps__link--active" href="#">Сотрудничество</a>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="suppliers">
+  <div class="container">
+    <h2 class="section-title suppliers__title">Сотрудничество</h2>
+    <section class="suppliers__offset">
+      <h3 class="suppliers__subtitle">Поставщикам</h3>
+      <p class="suppliers__descr">При планировании обстановки торгового помещения важно обустроить его с комфортом для
+        покупателей: грамотно зонировать, обеспечить эффективную демонстрацию и хранение товаров в зале. Если вам
+        необходимо комплексное оснащение, организация зоны отдыха или отдельные предметы меблировки для поддержания
+        эффективной торговой деятельности, мы поможем выбрать продукцию с учетом нагрузки от поступающего трафика.</p>
+    </section>
+    <section class="suppliers__offset">
+      <h3 class="suppliers__subtitle">Что вы получаете?</h3>
+      <ul class="list-reset suppliers__list">
+        <li class="suppliers__item suppliers__item--first">
+          <p class="suppliers__descr">Мы ценим идеи и вдохновение и предлагаем сотрудничество талантливым дизайнерам и
+            архитекторам. Выпускаемая нами продукция гармонично дополнит любой современный проект.</p>
+        </li>
+        <li class="suppliers__item suppliers__item--two">
+          <p class="suppliers__descr">Комплексное решение для красивого и функционального обустройства любых
+            пространств.
+          </p>
+        </li>
+        <li class="suppliers__item suppliers__item--three">
+          <p class="suppliers__descr">В ассортименте представлены все товарные группы для того, чтобы воссоздать
+            обстановку в помещениях разных типов: кабинетах, смешанных пространствах, Open Space, гостевых и
+            переговорных
+            комнатах.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="suppliers__offset">
+      <h3 class="suppliers__subtitle suppliers__subtitle--small">Ваши преимущества от сотрудничества</h3>
+      <ul class="list-reset suppliers__list">
+        <li class="suppliers__items">
+          <div class="suppliers__name">Возможность 1:</div>
+          <p class="suppliers__descr">Создавайте незабываемые впечатления. Красиво меблированная фотостудия не оставит
+            клиентов равнодушными, а созданная интерьером атмосфера будет надолго запечатлена на их снимках. Стильная и
+            разноплановая обстановка творческого пространства – ключевая составляющая его успешной деятельности.
+            Позаботьтесь о людях в кадре, а мы поможем правильно выбрать мебель.</p>
+        </li>
+        <li class="suppliers__items">
+          <div class="suppliers__name">Возможность 2:</div>
+          <p class="suppliers__descr">Мы предлагаем застройщикам, работающим на территории РФ, участие наших
+            специалистов
+            от этапа проектирования обстановки квартир и подбора комплексных интерьерных решений до оптовых поставок
+            мебели. Поможем организовать демонстрационный зал с образцами изделий и материалов на площади нового здания,
+            чтобы покупатель заблаговременно подобрал тот вариант меблировки, который удовлетворит даже самые
+            взыскательные ожидания.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="suppliers__offset">
+      <h3 class="suppliers__subtitle">Гарантии</h3>
+      <ol class="suppliers__list-ol">
+        <li class="suppliers__items">
+          <p class="suppliers__descr">При приемке товара Покупатель должен внимательно проверить его количество,
+            качество
+            и ассортимент на соответствие сопроводительным документам и заказу. После подписания товарного чека
+            Покупатель
+            утрачивает право предъявления претензий, которые можно выявить при приемке товара.</p>
+        </li>
+        <li class="suppliers__items">
+          <p class="suppliers__descr">На товары, сборка которых производилась покупателем самостоятельно (не
+            специалистами
+            Продавца), гарантийные обязательства Продавца не распространяются. Также гарантия не распространяется на
+            повреждения товара, полученные в ходе самостоятельной доставки и подъема товара. Покупатель не вправе
+            отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, т. е. если товар
+            может
+            быть использован исключительно приобретающим его потребителем.</p>
+        </li>
+        <li class="suppliers__items">
+          <p class="suppliers__descr">Возврат или обмен товара возможен при условии, что сохранена упаковка, товарный
+            вид
+            и потребительские свойства товара, а также товарный и кассовый чеки. В этом случае мы гарантируем вам
+            возврат
+            полной стоимости товара (за вычетом стоимости доставки). В случае отказа от товара при доставке, клиент
+            оплачивает услуги доставки.</p>
+        </li>
+      </ol>
+    </section>
+    <div class="suppliers__block">
+      <p class="suppliers__text">Срок гарантии на нашу мебель составляет от 18 до 60 месяцев</p>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="container footer__content">
+      <div class="footer__left">
+        <a href="index.html" class="footer__link"><img loading="lazy" src="img/logo.svg" class="image" width="187"
+            height="27" alt="Логотип"></a>
+        <ul class="list-reset social">
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Наша страничка в Фейсбуке">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--vk" aria-label="Наша страничка во Вконтакте">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--in" aria-label="Наша страничка в Инстаграмме">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#in"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <ul class="list-reset footer__list">
+          <li class="footer__item">
+            <h3 class="footer__subtitle">О нас</h3>
+            <ul class="list-reset footer__links">
+              <li class="footer__subitem"><a href="#" class="footer__sublink">О компании<span></span></a></li>
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Блог<span></span></a></li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__subtitle">Услуги</h3>
+            <ul class="list-reset footer__links">
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Доставка<span></span></a></li>
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Рассрочка и кредит<span></span></a></li>
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Сборка и установка<span></span></a></li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__subtitle">Связь с нами</h3>
+            <ul class="list-reset footer__links">
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Обратная связь<span></span></a></li>
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Контакты<span></span></a></li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__subtitle">Сотрудничество</h3>
+            <ul class="list-reset footer__links">
+              <li class="footer__subitem"><a href="cooperation.html"
+                  class="footer__sublink">Поставщикам<span></span></a></li>
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Оптовикам<span></span></a></li>
+              <li class="footer__subitem"><a href="#" class="footer__sublink">Карьера<span></span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__box">
+      <span class="footer__copyrite">SDP®  2011-2021</span>
+    </div>
+  </div>
+</footer>
+  </div>
+</body>
+
+</html>

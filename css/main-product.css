@@ -1,0 +1,15 @@
+.header {
+  margin-bottom: 21px;
+}
+@media (max-width: 575px) {
+  .header {
+    margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .breadcrumps {
+    margin-bottom: 34px;
+  }
+}
+/*# sourceMappingURL=main-product.css.map */
